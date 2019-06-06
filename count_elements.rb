@@ -1,4 +1,8 @@
 def count_elements(array)
-  # code goes here
+  hash = {}
+  array.map do |word|
+    hash[word] = array.count(word)
+  end
+  hash
 end
  
